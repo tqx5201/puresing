@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* 自定义实用类：隐藏滚动条 */
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+/* 确保 HTML/Body 占满全屏，防止移动端回弹 */
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #0f172a; /* slate-900 */
+}
